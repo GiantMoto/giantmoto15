@@ -4,12 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Profesjonalny tuning ECU i optymalizacja wydajności pojazdów. Oferujemy modyfikacje ECU, tuning wydajności i zaawansowaną diagnostykę." />
+    <meta name="description" content="Profesjonalny Chiptuning i optymalizacja wydajności pojazdów. Oferujemy modyfikacje ECU, tuning wydajności i zaawansowaną diagnostykę." />
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.77/build/spline-viewer.js"></script>
-    <title>ECUTune - Profesjonalny Tuning Pojazdów</title>
+    <title>Giant Motorsport - Profesjonalny Tuning Pojazdów</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/IKONA.png" type="image/png">
   </head>
   <body>
     <div id="root"></div>
+    <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function() {
+        window.VG_CONFIG = {
+          ID: "d7gl58kkhm6ex4oc",
+          region: 'eu',
+          render: 'bottom-right',
+          stylesheets: [
+            "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+          ],
+        }
+        var VG_SCRIPT = document.createElement("script");
+        VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+        VG_SCRIPT.defer = true;
+        document.body.appendChild(VG_SCRIPT);
+      })()
+    </script>
   </body>
 </html>

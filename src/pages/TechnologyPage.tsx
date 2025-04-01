@@ -6,13 +6,13 @@ export default function TechnologyPage() {
   const features = [
     "Sprzęt Diagnostyczny z dostępem do bramki SGW całej grupy FCA (Fiat, Lancia, Alfa Romeo, Abarth, Jeep, Maserati, Chrysler, Dodge, RAM i SRT)",
     "Hamownia drogowa Dyno Pro",
-    "Sterownik Delphi DCM 6.2V"
+    "Sterowniki Bosch, Siemens, Delphi, Denso i wiele innych"
   ];
 
   return (
-    <div className="bg-[#0A0A0A] pt-16">
+    <div className="bg-[#0A0A0A] pt-24">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-white mb-6 text-glow">Technologia</h1>
+        <h1 className="text-4xl font-bold text-center text-white mb-6 text-glow uppercase tracking-wide">Technologia</h1>
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
           Jesteśmy profesjonalistami z wieloletnim doświadczeniem oraz pasją, którzy korzystają z oryginalnego, 
           wysokiej jakości sprzętu, aby zagwarantować efekty.
@@ -44,14 +44,14 @@ export default function TechnologyPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="aspect-video">
             <img
-              src="/files/Technologia2.jpg"
+              src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/Technologia2.jpg"
               alt="Technologia 1"
               className="w-full h-full object-cover rounded-lg"
             />
           </div>
           <div className="aspect-video">
             <img
-              src="/files/Technologia.jpg"
+              src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/Technologia.jpg"
               alt="Technologia 2"
               className="w-full h-full object-cover rounded-lg"
             />

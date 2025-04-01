@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { Menu, X, Facebook } from 'lucide-react';
+import { Menu, X, Facebook, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
+    { path: '/o-nas', text: 'O nas' },
     { path: '/uslugi', text: 'Usługi' },
     { path: '/technologia', text: 'Technologia' },
     { path: '/portfolio', text: 'Portfolio' },
+    { path: '/blog', text: 'Blog' },
     { path: '/kontakt', text: 'Kontakt' }
   ];
 
@@ -22,7 +24,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" onClick={scrollToTop}>
             <img 
-              src="/LogoGiantMotorsport.png" 
+              src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/IKONA.png" 
               alt="Giant Motorsport Logo" 
               className="h-12"
             />
@@ -34,19 +36,29 @@ export default function Navigation() {
                 key={item.text}
                 to={item.path}
                 onClick={scrollToTop}
-                className="text-gray-400 hover:text-red-500 transition-colors hover-underline"
+                className="text-gray-400 hover:text-red-500 transition-colors hover-underline uppercase tracking-wide text-sm"
               >
                 {item.text}
               </Link>
             ))}
-            <a
-              href="https://www.facebook.com/profile.php?id=100076437766391"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-600 hover:text-red-400 transition-colors"
-            >
-              <Facebook className="w-6 h-6" />
-            </a>
+            <div className="flex items-center space-x-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=100076437766391"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-600 hover:text-red-400 transition-colors"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=%2B48510176564&app=facebook&entry_point=page_cta&fbclid=IwZXh0bgNhZW0CMTAAAR0rq72jW0kVafe8SVp3vOhmyWE1_DCeJ0M7tCo9anCEJV4MqVgNk5CjBpY_aem_fw6IJsQ9y_in8DPcTtlD_g"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-600 hover:text-red-400 transition-colors"
+              >
+                <MessageCircle className="w-6 h-6" />
+              </a>
+            </div>
           </div>
           
           <button
@@ -66,7 +78,7 @@ export default function Navigation() {
               <Link
                 key={item.text}
                 to={item.path}
-                className="block py-2 text-gray-400 hover:text-red-500 transition-colors"
+                className="block py-2 text-gray-400 hover:text-red-500 transition-colors uppercase tracking-wide text-sm"
                 onClick={() => {
                   setIsOpen(false);
                   scrollToTop();

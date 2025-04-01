@@ -39,7 +39,7 @@ export default function ServicesPage() {
     },
     {
       title: "Profesjonalna modyfikacja ECU",
-      description: "Zmiana parametrów silnika (sterownik Delphi DCM 7.1A), która zapewnia lepszą moc, moment obrotowy oraz płynność pracy silnika."
+      description: "Zmiana parametrów silnika (sterownikami Bosch, Siemens, Delphi, Denso, i wieloma innymi), która zapewnia lepszą moc, moment obrotowy oraz płynność pracy silnika."
     },
     {
       title: "Modyfikacja skrzyń biegów automatycznych",
@@ -48,6 +48,10 @@ export default function ServicesPage() {
     {
       title: "Zwiększenie ciśnienia oleju (Grupa VAG)",
       description: "Modyfikacja układu hydraulicznego skrzyni biegów, która poprawia reakcję na zmiany biegów, zwiększa trwałość elementów hydraulicznych oraz wydajność pracy skrzyni, szczególnie w pojazdach o większej mocy."
+    },
+    {
+      title: "Wyprogramowanie EGR",
+      description: "Usunięcie recyrkulacji spalin, które eliminuje problem z zapychaniem silnika, poprawia jego trwałość, osiągi i płynność pracy"
     }
   ];
 
@@ -55,7 +59,7 @@ export default function ServicesPage() {
     <div className="bg-[#0A0A0A] pt-16">
       <div className="relative w-full h-[300px] mb-12">
         <img 
-          src="/files/BGGiantMotorSport.png"
+          src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/BGGiantMotorSport.png"
           alt="Giant Motorsport Banner"
           className="w-full h-full object-cover"
         />
